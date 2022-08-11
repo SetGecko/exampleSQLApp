@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bottonLogin = new System.Windows.Forms.Button();
             this.passField = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginField = new System.Windows.Forms.TextBox();
@@ -45,7 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.bottonLogin);
             this.panel1.Controls.Add(this.passField);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.loginField);
@@ -57,20 +57,21 @@
             this.panel1.Size = new System.Drawing.Size(318, 310);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // bottonLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(66, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 31);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bottonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bottonLogin.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.bottonLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.bottonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.bottonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bottonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.bottonLogin.Location = new System.Drawing.Point(66, 257);
+            this.bottonLogin.Name = "bottonLogin";
+            this.bottonLogin.Size = new System.Drawing.Size(190, 31);
+            this.bottonLogin.TabIndex = 5;
+            this.bottonLogin.Text = "Войти";
+            this.bottonLogin.UseVisualStyleBackColor = false;
+            this.bottonLogin.Click += new System.EventHandler(this.bottonLogin_Click);
             // 
             // passField
             // 
@@ -161,6 +162,6 @@
         private System.Windows.Forms.TextBox passField;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox loginField;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bottonLogin;
     }
 }
